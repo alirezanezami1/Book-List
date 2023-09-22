@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: Arima;
+   src: url(@AlloFont\(Arima\).otf);
+  }
+
+  @font-face {
+    font-family: Google;
+    src: url(A\ Google\ .ttf);
+  }
+
+body {
+    background-color: #94b49f;
+    font-family:Arima ;
+}
+
+
+.sec-1 {
+    transition: filter .5s;
+}
+
+.sec-1 i {
+    font-size: 30px;
+    color: rgb(0, 112, 0);
+}
+.sec-1 span {
+    font-size: 45px;
+}
+.sec-1 h1 {
+    font-weight: 500;
+    color: #242222;
+}
+
+
+
+.sec-2 {
+    width: 750px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: filter .5s;
+}
+
+.sec-2 .btn {
+    background-color: #ECB390;
+    text-align: center;
+    width: 100%;
+    padding: 1rem .75rem;
+    height: calc(3.5rem + 2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
+.sec-2 .btn i {
+    font-size: 35px;
+    position: relative;
+    top: 5px;
+}
+
+.form-control {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-control:focus {
+    border: 4px solid #CEE5D0;
+    box-shadow: none;
+}
+
+
+
+
+.sec-3 {
+    width: 750px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.sec-3 .books {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    font-family: Google;
+    background-color: #FCF8E8;
+    border-radius: 5px ;
+    overflow: scroll;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.sec-3 h4,
+h5 {
+    color: rgb(50, 50, 50);
+    position: relative;
+    top: 3px;
+    font-size: 20px;
+}
+.sec-3 span {
+    font-size: 30px;
+}
+
+
+.forModal {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -80%;
+    font-family: Google;
+    width: 300px;
+    height: 170px;
+    background-color: #CEE5D0;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: top .4s;
+}
+
+.forModal button {
+    background-color:#ECB390 ;
+    color: #353535;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.forModal button:focus {
+    box-shadow: none;
+}
+
+
+@media (max-width: 576px) {
+    .sec-2 {
+        width: 80%;
+    }
+    .sec-3 {
+        width: 100%;
+    }
+    .sec-3 h4,
+    h5 {
+        font-size: 15px;
+    }
+}
